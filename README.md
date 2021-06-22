@@ -1,4 +1,6 @@
 # MySQL 8.0 Multimaster Replication
+Setting up MySQL 8.0 multimaster replication with ease
+
 The concept is the same as Mariadb multimaster replication which can be found here https://github.com/bramyeni/Mariadb-Multimaster
 However there few differences:
 1. MySQL 8.0 default authentication using sha2 or sha256, in this case i will force to use native (old style)
