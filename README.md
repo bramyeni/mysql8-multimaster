@@ -1,4 +1,5 @@
-# MySQL 8.0 Multimaster Replication
+# MySQL 8.0 Multimaster and Master - Replica Replications
+
 Setting up MySQL 8.0 multimaster replication with ease
 
 The concept is the same as Mariadb multimaster replication which can be found here https://github.com/bramyeni/Mariadb-Multimaster
@@ -50,7 +51,7 @@ Run as Master and Replica server
 
 Run as Master (assuming master IP = 192.168.0.178 and PORT = 3308 )
 <pre>
-docker run -it --name mysql8master -p 3306:3306 -v /opt/mysql:/var/lib/mysql -v /opt/mysql/conf:/etc/mysql/mysql.conf.d -e MYSQL_DBCONFIG_REBUILD=yes -e MYSQL_DATABASE_REBUILD=yes -e MYSQL_REPLICA_MASTER="yes" galera-mysql8
+docker run -it --name mysql8master -p 3308:3306 -v /opt/mysql:/var/lib/mysql -v /opt/mysql/conf:/etc/mysql/mysql.conf.d -e MYSQL_DBCONFIG_REBUILD=yes -e MYSQL_DATABASE_REBUILD=yes -e MYSQL_REPLICA_MASTER="yes" galera-mysql8
 </pre>
 
 Run as slave
